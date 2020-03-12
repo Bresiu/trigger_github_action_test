@@ -2,15 +2,12 @@ name: Do Something That Needs Scheduled
 
 on:
   repository_dispatch:
-    types: do-something
+    types: release-pentest-build
 
 jobs:
   build:
-    name: Run Some Scheduled Thing
+    name: Run Pentest Release build
     runs-on: ubuntu-latest
     steps:
-      - name: Do Something
-        run: echo Doing Something...
-
-      - name: Do Something Based On Triggered Event Data
-        run: 'echo "Triggered event text: ${{ github.event.client_payload.text }}"'
+      - name: Set input to VAR and print VAW
+        run: 'echo "Triggered event text: ${{ github.event.temp.var }}"'
