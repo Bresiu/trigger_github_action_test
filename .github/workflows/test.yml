@@ -1,4 +1,4 @@
-name: Do Something That Needs Scheduled
+name: Release Pentest build to AppCenter with Cobalt endpoint
 
 on:
   repository_dispatch:
