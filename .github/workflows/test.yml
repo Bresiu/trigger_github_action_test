@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set input to VAR and print VAW
-        run: 'echo "Triggered event text: ${{ github.event.client_payload.var }}"'
+        run: 'echo "Triggered event text: ${{ github.event.client_payload.test_variable }}"'
